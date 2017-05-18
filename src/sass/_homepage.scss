@@ -4,8 +4,8 @@
   padding: 2em;
   box-sizing: border-box;
   color: white;
-  background-color: #333;
-  background-image: url('../images/bg.jpg');
+  //background-color: #333;
+  //background-image: url('../images/bg.jpg');
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -14,6 +14,9 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+.hp__title {
+  position: relative;
 }
 .glass {
   height: 100vh;
@@ -29,6 +32,8 @@
   transition-property: opacity;
   transition-duration: 0;
   transition-delay:  0.4s;
+  z-index: 1;
+
   .bam & {
     opacity: 1;
   }
@@ -49,9 +54,20 @@
   font-weight: 400;
   opacity: 0;
   white-space: nowrap;
+  z-index: 1;
   .bam & {
     transform: rotate(-25deg) scale(1);
     top: 50%;
     opacity: 1;
   }
+}
+
+.opacity {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    background-image: url(https://www.transparenttextures.com/patterns/3px-tile.png);
 }
