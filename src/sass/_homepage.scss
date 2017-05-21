@@ -13,7 +13,23 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 0;
+  left: 0;
   overflow: hidden;
+}
+.homepage__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/bg.jpg');
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  background-size: cover;
+  background-position: center center;
+  .mobile & {
+    display: block;
+  }
 }
 .hp__title {
   position: relative;
@@ -63,7 +79,7 @@
       font-size: 4.2em;
     }
     @media all and (min-width: $bp-md) {
-      font-size: 10em;
+      font-size: 8em;
     }
     .bam & {
       transform: rotate(-25deg) scale(1);

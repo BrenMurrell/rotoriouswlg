@@ -43,6 +43,7 @@ require('es6-promise').polyfill();                      // Adds es6 promises sup
 var dirs = {
     css: 'build/css',
     scss: 'src/sass/**', // Includes all sub directories
+    localdev: 'C:/git/InstantWP_4.5/iwpserver/htdocs/wordpress/wp-content/themes/rwlg/css',
     images: 'src/images'
 };
 // var siteurl = 'http://www.google.com';
@@ -92,7 +93,8 @@ gulp.task('sass', function () {
         }))
         .pipe(autoprefixer(apConfig))                                       // Add out autoprefixing
         .pipe(sourcemaps.write())		                                    // Output sourcemaps to a separate file
-        .pipe(gulp.dest(dirs.css)) 				                            // Output compiled css to the css folder
+        .pipe(gulp.dest(dirs.css))
+        .pipe(gulp.dest(dirs.localdev)) 				                            // Output compiled css to the css folder
         .pipe(browserSync.stream())
 
         .on('end', function () {                                              // Handle the end event

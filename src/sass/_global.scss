@@ -4,3 +4,11 @@
 $bp-sm: 30em;
 $bp-md: 80em;
 $bp-lg: 100em;
+
+body {
+  overflow-x: hidden;
+  background: black;
+}
+img {
+  max-width: 100%;
+}

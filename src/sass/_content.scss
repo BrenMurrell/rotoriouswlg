@@ -1,0 +1,16 @@
+.content {
+  background: black;
+  position: relative;
+  top: -60px;
+  z-index: 100;
+  min-height: 100vh;
+  &:after {
+    display: block;
+    width: 100vw;
+    height: 60px;
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    background: black;
+  }
+}

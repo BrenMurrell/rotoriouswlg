@@ -1,0 +1,52 @@
+@mixin navHover {
+    color: #fff;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    &:before {
+      position: absolute;
+      left: -24px;
+      top: -9px;
+      content: '\f005';
+      font-family: FontAwesome;
+    }
+    &:after {
+      position: absolute;
+      right: -25px;
+      top: -9px;
+      content: '\f005';
+      font-family: FontAwesome;
+    }
+}
+
+.nav--main {
+  background: #111;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    margin: 0.5em 13px;
+    padding: 0;
+    display: inline-block;
+    font-family: $fontHeadings;
+    font-size: 20px;
+    line-height: 2em;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    &:hover {
+      @include navHover;
+    }
+  }
+  .current_page_item {
+    a {
+      @include navHover;
+    }
+  }
+
+}
