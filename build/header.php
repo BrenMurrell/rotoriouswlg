@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title>ROTORIOUS WLG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="605651619640862" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="ROTORIOUS FPV | Guerilla FPV" />
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/og-image.png" />
+    <meta property="og:description" content="ROTORIOUS FPV | Guerilla FPV" />
+    <meta property="og:url" content="https://rotoriouswlg.com/"/>
     <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon-wlg.png" />
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
@@ -11,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/base-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css?v=20170521">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css?v=20170524">
     <?php wp_head(); ?>
   </head>
   <body>
@@ -33,9 +39,6 @@
         <div class="hp__title">
           <h1>Rotorious WLG</h1>
           <h2>Guerilla FPV</h2>
-        </div>
-        <div class="comingsoon">
-          <h3>Coming soon</h3>
         </div>
       </div>
     <php endif; ?>

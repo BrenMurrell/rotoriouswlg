@@ -1,14 +1,19 @@
 $fontHeadings: 'Black Ops One', cursive;
 //$textShadow: 2px 2px 0px #ff8000;
 $textShadow: 2px 2px 0px #ff00c9;
+@mixin textShadow($color: $col-brand) {
+  text-shadow: 2px 2px 0px $color;
+}
+
 h1, h2, h3 {
   font-family: $fontHeadings;
-  text-shadow: $textShadow;
+
   margin: 0;
   padding: 0;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 0.8em;
+  @include textShadow();
 }
 h1 {
   font-size: 1.6em;

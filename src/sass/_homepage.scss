@@ -69,12 +69,12 @@
     transition-property: transform, top;
     transition-timing-function: ease-in;
     transform: rotate(-25deg) scale(10);
-    text-shadow: $textShadow;
     font-family: $fontHeadings;
     font-weight: 400;
     opacity: 0;
     white-space: nowrap;
     z-index: 1;
+    @include textShadow();
     @media all and (min-width: $bp-sm) {
       font-size: 4.2em;
     }
