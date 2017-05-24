@@ -1,0 +1,24 @@
+.post {
+  max-width: 1240px;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 100px;
+  h2 {
+    text-align: center;
+  }
+}
+.post__extlink {
+  text-align: center;
+  a {
+    color: #fff;
+  }
+}
+.post__nav {
+  a {
+    color: white;
+    float: left;
+    &[rel='next'] {
+      float: right;
+    }
+  }
+}

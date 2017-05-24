@@ -7,7 +7,7 @@ $textShadow: 2px 2px 0px #ff00c9;
 
 h1, h2, h3 {
   font-family: $fontHeadings;
-
+  color: #fff;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -31,5 +31,32 @@ h2 {
   }
   @media all and (min-width: $bp-md) {
     font-size: 3em;
+  }
+}
+
+
+
+&.pilot--beardo {
+  h2 {
+    @include textShadow($col-beardo);
+  }
+  .fi__icon {
+    background-color: $col-beardo;
+  }
+}
+&.pilot--kuato {
+  h2 {
+    @include textShadow($col-kuato);
+  }
+  .fi__icon {
+    background-color: $col-kuato;
+  }
+}
+&.pilot--tyzag {
+  h2 {
+    @include textShadow($col-tyza);
+  }
+  .fi__icon {
+    background-color: $col-tyza;
   }
 }

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css?v=20170524">
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,7 +31,7 @@
       ga('send', 'pageview');
 
     </script>
-    <php if(is_front_page()) :?>
+    <?php if(is_front_page()) :?>
       <div class="homepage">
         <div class="homepage__banner"></div>
         <div class="opacity"></div>
@@ -41,7 +41,7 @@
           <h2>Guerilla FPV</h2>
         </div>
       </div>
-    <php endif; ?>
+    <?php endif; ?>
     <div class="content">
       <nav class="nav--main">
         <ul>

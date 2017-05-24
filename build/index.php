@@ -5,7 +5,7 @@
             <div class="pure-g" id="feed__posts">
               <?php while(have_posts()) : the_post(); ?>
                 <?php $pilot = get_post_meta($post->ID, 'pilot',true); ?>
-                <div class="pure-u-1-1 pure-u-md-1-3 feed__item feed__item--<?php echo $pilot; ?>">
+                <div class="pure-u-1-1 pure-u-md-1-3 feed__item pilot--<?php echo $pilot; ?>">
                   <div class="fi__inner">
 
                     <a href="<?php echo get_post_meta($post->ID, 'rwlg_external_link',true); ?>" target="_blank">
